@@ -1,0 +1,156 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/paper1"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MountainActivity" >
+
+    <TextView
+        android:id="@+id/mountain_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="5dp"
+        android:text="@string/title_activity_mountain"
+        android:textStyle="italic" />
+
+    <ImageView
+        android:id="@+id/res_whitecloud_img"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/mountain_label"
+        android:scaleType="fitXY"
+        android:src="@drawable/whitecloudicon"
+        tools:ignore="ContentDescription" />
+
+    <TextView
+        android:id="@+id/res_whitecloud"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/res_whitecloud_img" />
+
+    <ImageView
+        android:id="@+id/res_thundercloud_img"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/mountain_label"
+        android:layout_centerHorizontal="true"
+        android:scaleType="fitXY"
+        android:src="@drawable/thundercloudicon"
+        tools:ignore="ContentDescription" />
+
+    <TextView
+        android:id="@+id/res_thundercloud"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/res_thundercloud_img"
+        android:layout_centerHorizontal="true" />
+
+    <ImageView
+        android:id="@+id/res_gold_img"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/mountain_label"
+        android:scaleType="fitXY"
+        android:src="@drawable/goldicon"
+        tools:ignore="ContentDescription" />
+
+    <TextView
+        android:id="@+id/res_gold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/res_gold_img" />
+
+    <Button
+        android:id="@+id/upgrade_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/res_whitecloud"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/buttonimg"
+        android:onClick="onClickUpgrade"
+        android:textColor="#5DBCD2" />
+
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/upgrade_button"
+        android:hint="@string/country_name_hint"
+        android:inputType="text"
+        android:maxLines="1"
+        android:singleLine="true" />
+
+    <EditText
+        android:id="@+id/anthem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/name"
+        android:hint="@string/anthem_hint"
+        android:inputType="text"
+        android:maxLines="1"
+        android:singleLine="true" />
+
+    <EditText
+        android:id="@+id/role"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/anthem"
+        android:layout_marginBottom="10dp"
+        android:hint="@string/role_hint"
+        android:inputType="text"
+        android:maxLines="1"
+        android:singleLine="true" />
+
+    <TextView
+        android:id="@+id/political_system_hint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/role"
+        android:layout_marginLeft="5dp"
+        android:text="@string/political_system_hint"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <Spinner
+        android:id="@+id/political_system_selector"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/political_system_hint"
+        android:entries="@array/political_systems" />
+
+    <TextView
+        android:id="@+id/religion_hint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/political_system_selector"
+        android:layout_marginLeft="5dp"
+        android:text="@string/religion_hint"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <Spinner
+        android:id="@+id/religion_selector"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/religion_hint"
+        android:entries="@array/religions" />
+
+    <Button
+        android:id="@+id/setupCountryButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/religion_selector"
+        android:background="@drawable/buttonimg"
+        android:onClick="onClickSetupCountry"
+        android:text="@string/setup_country_button" />
+
+</RelativeLayout>

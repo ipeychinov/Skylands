@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TextView
+        android:id="@+id/sender_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_margin="10dp"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/reciever_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_margin="10dp"
+        android:text="@string/reciever_name"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/offer_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/sender_name"
+        android:layout_marginLeft="10dp"
+        android:text="@string/offer_gold_label" />
+
+    <TextView
+        android:id="@+id/offer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/offer_label"
+        android:layout_toRightOf="@id/offer_label" />
+
+    <TextView
+        android:id="@+id/demand_whitecloud_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/reciever_name"
+        android:layout_marginRight="10dp"
+        android:text="@string/demand_whitecloud_label" />
+
+    <TextView
+        android:id="@+id/demand_whitecloud"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/demand_whitecloud_label"
+        android:layout_toLeftOf="@id/demand_whitecloud_label" />
+
+    <TextView
+        android:id="@+id/demand_thundercloud_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/demand_whitecloud_label"
+        android:layout_marginRight="10dp"
+        android:text="@string/demand_thundercloud_label" />
+
+    <TextView
+        android:id="@+id/demand_thundercloud"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/demand_thundercloud_label"
+        android:layout_toLeftOf="@id/demand_thundercloud_label" />
+
+</RelativeLayout>

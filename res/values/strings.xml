@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Skylands</string>
+    <string name="username_hint">Username</string>
+    <string name="password_hint">Password</string>
+    <string name="confirm_password_hint">Confirm password</string>
+    <string name="login_button">Login</string>
+    <string name="register_button">Register</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_register">RegisterActivity</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_setup_country">SetupCountryActivity</string>
+    <string name="country_name_hint">Name</string>
+    <string name="anthem_hint">Anthem</string>
+    <string name="role_hint">Role</string>
+    <string name="political_system_hint">Political System:</string>
+    <string name="religion_hint">Religion:</string>
+    <string name="setup_country_button">Save</string>
+
+    <string-array name="political_systems">
+        <item>Anarchy</item>
+        <item>Democracy</item>
+        <item>Monarchy</item>
+        <item>Oligarchy</item>
+        <item>Authoritarianism</item>
+        <item>Theocracy</item>
+    </string-array>
+    <string-array name="religions">
+        <item>Llama Cult</item>
+        <item>Atheism</item>
+        <item>Christianity</item>
+        <item>Islam</item>
+        <item>Hinduism</item>
+        <item>Buddhism</item>
+    </string-array>
+
+    <string name="title_activity_skylands">SkylandsActivity</string>
+    <string name="logout_button">Logout</string>
+    <string name="current_level_label">level</string>
+    <string name="map_button">Map</string>
+    <string name="title_activity_map">MapActivity</string>
+    <string name="coordinates_label">coordinates</string>
+    <string name="title_activity_otherland">OtherlandActivity</string>
+    <string name="name_label">Name:</string>
+    <string name="anthem_label">Anthem:</string>
+    <string name="role_label">User role:</string>
+    <string name="system_label">Political system:</string>
+    <string name="religion_label">Religion:</string>
+    <string name="trade_request_label">Trade</string>
+    <string name="title_activity_trade">TradeActivity</string>
+    <string name="offer_hint">Gold</string>
+    <string name="demand_whitecloud_hint">Whitecloud essence</string>
+    <string name="demand_thundercloud_hint">Thundercloud essence</string>
+    <string name="offer_label">Your offer:</string>
+    <string name="demands_label">Your demands:</string>
+    <string name="make_request_label">Send request</string>
+    <string name="default_value">0</string>
+    <string name="title_activity_mountain">Divine Mountain</string>
+    <string name="title_activity_quarry">Cloud Quarry</string>
+    <string name="title_activity_tower">Research Tower</string>
+    <string name="title_activity_village">Village</string>
+    <string name="title_activity_harbor">Sky Harbor</string>
+    <string name="whitecloud_label">whitecloud</string>
+    <string name="thundercloud_label">thundercloud</string>
+    <string name="gold_label">gold</string>
+    <string name="research_cost_label">thundercloud essence</string>
+    <string name="offer_gold_label">gold:</string>
+    <string name="demand_whitecloud_label">:whitecloud</string>
+    <string name="demand_thundercloud_label">:thundercloud</string>
+    <string name="reciever_name">you</string>
+    <string name="answer_request_title">Answer request</string>
+    <string name="answer_request_label">Complete transaction : </string>
+    <string name="confirm_label">Confirm</string>
+    <string name="deny_label">Deny</string>
+
+</resources>

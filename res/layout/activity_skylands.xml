@@ -1,0 +1,143 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/paper1"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".SkylandsActivity" >
+
+    <ImageView
+        android:id="@+id/res_whitecloud_img"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentLeft="true"
+        android:scaleType="fitXY"
+        android:src="@drawable/whitecloudicon"
+        tools:ignore="ContentDescription" />
+
+    <TextView
+        android:id="@+id/res_whitecloud"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/res_whitecloud_img" />
+
+    <ImageView
+        android:id="@+id/res_thundercloud_img"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_centerHorizontal="true"
+        android:scaleType="fitXY"
+        android:src="@drawable/thundercloudicon"
+        tools:ignore="ContentDescription" />
+
+    <TextView
+        android:id="@+id/res_thundercloud"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/res_thundercloud_img"
+        android:layout_centerHorizontal="true" />
+
+    <ImageView
+        android:id="@+id/res_gold_img"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentRight="true"
+        android:scaleType="fitXY"
+        android:src="@drawable/goldicon"
+        tools:ignore="ContentDescription" />
+
+    <TextView
+        android:id="@+id/res_gold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/res_gold_img" />
+
+    <Button
+        android:id="@+id/logout_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="left"
+        android:background="@drawable/buttonimg"
+        android:onClick="onClickLogout"
+        android:text="@string/logout_button" />
+
+    <Button
+        android:id="@+id/map_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/logout_button"
+        android:layout_gravity="left"
+        android:background="@drawable/buttonimg"
+        android:onClick="onClickLoadMap"
+        android:text="@string/map_button" />
+
+    <ImageView
+        android:id="@+id/quarry_img"
+        android:layout_width="300dp"
+        android:layout_height="130dp"
+        android:layout_above="@id/map_button"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="40dp"
+        android:clickable="true"
+        android:scaleType="fitXY"
+        android:src="@drawable/quarry"
+        tools:ignore="ContentDescription" />
+
+    <ImageView
+        android:id="@+id/mountain_img"
+        android:layout_width="250dp"
+        android:layout_height="80dp"
+        android:layout_above="@id/quarry_img"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="-30dp"
+        android:clickable="true"
+        android:scaleType="fitXY"
+        android:src="@drawable/mountain"
+        tools:ignore="ContentDescription" />
+
+
+    <ImageView
+        android:id="@+id/tower_img"
+        android:layout_width="30dp"
+        android:layout_height="150dp"
+        android:layout_above="@id/quarry_img"
+        android:layout_alignRight="@id/quarry_img"
+        android:layout_marginBottom="-25dp"
+        android:layout_marginRight="30dp"
+        android:clickable="true"
+        android:scaleType="fitXY"
+        android:src="@drawable/tower"
+        tools:ignore="ContentDescription" />
+
+    <ImageView
+        android:id="@+id/village_img"
+        android:layout_width="150dp"
+        android:layout_height="80dp"
+        android:layout_above="@id/quarry_img"
+        android:layout_alignRight="@id/tower_img"
+        android:layout_marginBottom="-70dp"
+        android:clickable="true"
+        android:scaleType="fitXY"
+        android:src="@drawable/village"
+        tools:ignore="ContentDescription" />
+
+    <ImageView
+        android:id="@+id/harbor_img"
+        android:layout_width="70dp"
+        android:layout_height="100dp"
+        android:layout_above="@id/quarry_img"
+        android:layout_alignLeft="@id/quarry_img"
+        android:layout_marginBottom="-55dp"
+        android:layout_marginLeft="10dp"
+        android:clickable="true"
+        android:scaleType="fitXY"
+        android:src="@drawable/harbor"
+        tools:ignore="ContentDescription" />
+
+</RelativeLayout>

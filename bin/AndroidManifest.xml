@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.ipeychinov.skylands"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="17" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.ipeychinov.skylands.LoginActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.ipeychinov.skylands.RegisterActivity"
+            android:label="@string/title_activity_register"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.ipeychinov.skylands.SetupCountryActivity"
+            android:label="@string/title_activity_setup_country"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.ipeychinov.skylands.SkylandsActivity"
+            android:label="@string/title_activity_skylands"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.ipeychinov.skylands.MapActivity"
+            android:label="@string/title_activity_map"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.ipeychinov.skylands.OtherlandActivity"
+            android:label="@string/title_activity_otherland"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.ipeychinov.skylands.TradeActivity"
+            android:label="@string/title_activity_trade"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.ipeychinov.skylands.MountainActivity"
+            android:label="@string/title_activity_mountain"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.ipeychinov.skylands.QuarryActivity"
+            android:label="@string/title_activity_quarry"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.ipeychinov.skylands.TowerActivity"
+            android:label="@string/title_activity_tower"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.ipeychinov.skylands.VillageActivity"
+            android:label="@string/title_activity_village"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.ipeychinov.skylands.HarborActivity"
+            android:label="@string/title_activity_harbor"
+            android:screenOrientation="portrait" >
+        </activity>
+    </application>
+
+</manifest>

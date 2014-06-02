@@ -1,0 +1,89 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/paper1"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".HarborActivity" >
+
+    <TextView
+        android:id="@+id/harbor_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="@string/title_activity_harbor"
+        android:layout_marginBottom="5dp"
+        android:textStyle="italic" />
+
+    <ImageView
+        android:id="@+id/res_whitecloud_img"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/harbor_label"
+        android:scaleType="fitXY"
+        android:src="@drawable/whitecloudicon"
+        tools:ignore="ContentDescription" />
+
+    <TextView
+        android:id="@+id/res_whitecloud"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/res_whitecloud_img" />
+
+    <ImageView
+        android:id="@+id/res_thundercloud_img"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/harbor_label"
+        android:layout_centerHorizontal="true"
+        android:scaleType="fitXY"
+        android:src="@drawable/thundercloudicon"
+        tools:ignore="ContentDescription" />
+
+    <TextView
+        android:id="@+id/res_thundercloud"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/res_thundercloud_img"
+        android:layout_centerHorizontal="true" />
+
+    <ImageView
+        android:id="@+id/res_gold_img"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/harbor_label"
+        android:scaleType="fitXY"
+        android:src="@drawable/goldicon"
+        tools:ignore="ContentDescription" />
+
+    <TextView
+        android:id="@+id/res_gold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/res_gold_img" />
+
+    <Button
+        android:id="@+id/upgrade_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/res_whitecloud"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/buttonimg"
+        android:onClick="onClickUpgrade" />
+
+    <ListView
+        android:id="@android:id/list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/upgrade_button" />
+
+</RelativeLayout>
